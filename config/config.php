@@ -34,7 +34,6 @@ function getPdoByDBType($db_type, $host , $port, $database_name, $user_name, $pa
     }else {
         $db = new PDO('oci:host=' . $host . ';port=' . $port . ';dbname=' . $database_name, $user_name, $password);
     }
-    dd($db);
     return $db;
 }
 

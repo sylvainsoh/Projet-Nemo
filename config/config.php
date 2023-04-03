@@ -267,3 +267,11 @@ function getProfileList()
     $request->execute();
     return $request->fetchAll(PDO::FETCH_OBJ);
 }
+
+function getDatabaseList()
+{
+    global $db;
+    $request = $db->prepare("SELECT * FROM db_distante ");
+    $request->execute();
+    return $request->fetchAll(PDO::FETCH_OBJ);
+}

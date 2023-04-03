@@ -12,7 +12,7 @@ require "config/config.php";
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Projet Nemo - Bases de données connectées</title>
+    <title>Projet Nemo - Applications connectées</title>
 
     <link rel="shortcut icon" href="views/assets/img/whale.png" type="image/x-icon">
 
@@ -47,7 +47,7 @@ require "config/config.php";
             <!-- Begin Page Content -->
             <div class="container-fluid">
                 <h1 class="h3 mb-4 text-gray-800">
-                    Bases de données connectées
+                    Applications connectées
                 </h1>
                 <?php
                     $databases = getDatabasesList();
@@ -55,7 +55,7 @@ require "config/config.php";
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Bases de données distantes</h6>
+                        <h6 class="m-0 font-weight-bold text-primary">Applications</h6>
                     </div>
                     <div class="card-body">
                         <div class="table table-responsive">

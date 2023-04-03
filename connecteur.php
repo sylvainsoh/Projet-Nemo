@@ -45,7 +45,7 @@ require "config/config.php";
             <!-- Begin Page Content -->
             <div class="container-fluid">
                 <h1 class="h3 mb-4 text-gray-800">
-                    BD - distante
+                    Application - distante
                 </h1>
                 <?php
                         $databases = getDatabasesList();

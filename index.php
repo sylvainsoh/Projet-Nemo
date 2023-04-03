@@ -43,18 +43,18 @@ require "config/config.php";
                     </button>
                 </div>
             <?php endforeach; ?>
-            <div class="card border-0 shadow-lg my-5">
+            <div class="card border-0 shadow-none my-5">
                 <div class="card-body p-0">
                     <!-- Nested Row within Card Body -->
-                    <div class="row">
-                        <div class="col-lg-6 d-none d-lg-block">
-                            <img src="views/assets/img/whale.png" style="width: 415px;padding: 25px;" alt="Whale logo">
+                    <div class="row text-center">
+                        <div class="col-lg-6">
+                            <img src="views/assets/img/logoCy.png" style="width: 415px;padding-top: 20% ;" alt="Whale logo">
                         </div>
-                        <div class="col-lg-6 border-left-primary">
+                        <div class="col-lg-6">
                             <div class="p-5">
                                 <div class="text-center">
                                     <h1 class="h4 text-gray-900 mb-4 text-uppercase">
-                                        projet némo
+                                        némo
                                     </h1>
                                 </div>
                                 <form class="user" action="controllers/login_x.php" method="post">
@@ -65,7 +65,8 @@ require "config/config.php";
                                         <input type="password" class="form-control" placeholder="Saisissez votre mot de passe" name="password" required value="<?=  $_SESSION['password'] ?>">
                                     </div>
 
-                                    <button type="submit" class="btn btn-primary btn-user btn-block">
+                                    <button type="submit" class="btn btn-primary btn-block">
+                                        <i class="fas fa-sign-in"></i>
                                         Se connecter
                                     </button>
                                 </form>
@@ -79,7 +80,8 @@ require "config/config.php";
 
     </div>
 <div class="text-center">
-    &copy; Némo Project <?=date('Y')?>
+    &copy; Némo Project <?=date('Y')?><br>
+    <img src="views/assets/img/whale.png" style="width:5%" alt="Whale logo">
 </div>
 </div>
 

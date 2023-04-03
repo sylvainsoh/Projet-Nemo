@@ -155,7 +155,7 @@ $_SESSION['data'] = [];
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="text-center">
-                            <img src="views/assets/img/undraw_posting_photo.svg" height="400" alt="Landing illustration">
+                            <img src="views/assets/img/undraw_posting_photo.svg" height="300" alt="Landing illustration">
                         </div>
                     </div>
                 </div>

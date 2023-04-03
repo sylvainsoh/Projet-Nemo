@@ -27,17 +27,14 @@ if (empty($_SESSION['user'])) {
 }
 **/
 function getPdoByDBType($db_type, $host , $port, $database_name, $user_name, $password){
-    switch ( $db_type) {
-        case "mysql" :
-            $db = new PDO('mysql:host=' . $host . ';port=' . $port . ';dbname=' . $database_name, $user_name, $password);
-            break;
-        case "pgsql" :
-            $db = new PDO('pgsql:host=' . $host . ';port=' . $port . ';dbname=' . $database_name, $user_name, $password);
-            break;
-        case "oci" :
-            $db = new PDO('oci:host=' . $host . ';port=' . $port . ';dbname=' . $database_name, $user_name, $password);
-            break;
+    if( $db_type=="mysql") {
+        $db = new PDO('mysql:host=' . $host . ';port=' . $port . ';dbname=' . $database_name, $user_name, $password);
+    }elseif($db_type=="pgsql") {
+        $db = new PDO('pgsql:host=' . $host . ';port=' . $port . ';dbname=' . $database_name, $user_name, $password);
+    }else {
+        $db = new PDO('oci:host=' . $host . ';port=' . $port . ';dbname=' . $database_name, $user_name, $password);
     }
+    dd($db);
     return $db;
 }
 

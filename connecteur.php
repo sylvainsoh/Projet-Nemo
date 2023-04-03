@@ -114,7 +114,7 @@ require "config/config.php";
                                        placeholder="Nom d'utilisateur" name="username" required>
                             </div>
                             <div class="form-group">
-                                <input value="<?= $_SESSION['data']['password'] ?>" type="password" class="form-control"
+                                <input value="<?= $_SESSION['data']['password']?>" type="password" class="form-control"
                                        placeholder="Mot de passe" name="password">
                             </div>
                             <div class="form-group">

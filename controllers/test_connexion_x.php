@@ -33,7 +33,7 @@ try {
     }
     // If the connexion with de database is in success
     global $db;
-    $db = new PDO('mysql:host=' . $host . ';port=' . $port . ';dbname=' . $database_name, $user_name, $password);
+    $db = getPdoByDBType( $_POST['type'], $host , $port, $database_name, $user_name, $password);
     $response['result'] = true;
 
     // Insertion ou mise à jour des données en local
